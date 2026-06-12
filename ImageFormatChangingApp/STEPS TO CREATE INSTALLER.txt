@@ -1,0 +1,20 @@
+STEPS TO CREATE INSTALLER (.exe):
+STEP 1: Open command prompt WIN+R -> type "cmd"
+STEP 2: Type cd followed be the project folder's address
+STEP 3: Paste the following command an run it:
+
+jpackage ^
+  --type exe ^
+  --name "Image Format Changing App" ^
+  --app-version 1.0.0 ^
+  --vendor "YourName" ^
+  --input app ^
+  --main-jar AdvancedImageConverter.jar ^
+  --main-class ui.AdvancedImageConverter ^
+  --icon app.ico ^
+  --win-menu ^
+  --win-menu-group "Image Tools" ^
+  --win-shortcut ^
+  --win-upgrade-uuid "b7f7c9e1-9d4c-4c7e-a2f4-9a1b7a3d1111" 
+
+STEP 4: Open and run the installer in the project the folder the app will be installed
